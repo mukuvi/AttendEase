@@ -49,9 +49,10 @@ header nav ul li a.active {
 section.registration {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   min-height: 100vh;
   padding: 20px;
+  flex-wrap: wrap;
 }
 
 .form-container,
@@ -303,14 +304,20 @@ footer {
     margin: 10px 0;
   }
 
-  .form-container,
-  .camera-container {
-    padding: 20px;
-    max-width: 100%;
+  /* Swap camera and form sections on mobile */
+  .registration {
+    flex-direction: column;
+    align-items: center;
   }
 
   .camera-container {
-    margin-top: 20px;
+    order: -1; /* Move camera to top */
+    margin-bottom: 20px;
+  }
+
+  .form-container {
+    margin-left: 0;
+    max-width: 100%;
   }
 
   .about-container {
