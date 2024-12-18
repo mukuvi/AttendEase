@@ -310,14 +310,15 @@ footer {
     align-items: center;
   }
 
-  .camera-container {
-    order: -1; /* Move camera to top */
-    margin-bottom: 20px;
-  }
-
   .form-container {
     margin-left: 0;
     max-width: 100%;
+  }
+
+  .camera-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    order: 1; /* Make sure camera is at the bottom */
   }
 
   .about-container {
