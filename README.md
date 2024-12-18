@@ -5,17 +5,11 @@
 ## Key Features of AttendEase:
 
 - **Automatic Attendance Tracking**  
-  Students are registered once, and the system verifies attendance by capturing their face during the class.
+  Students are registered once, and the system verifies attendance by capturing their faces during the class.
 
 - **Real-time Monitoring**  
-  Lecturers can view the attendance status of their class in real-time and see which students have attended.
+  Lecturers can view the attendance status of their class in real time and see which students have attended.
 
 - **Reports & Analytics**  
   Detailed reports on attendance history, percentage, and missed classes are generated automatically.
 
-- **Multi-Department Support**  
-  Supports multiple departments and academic years, including:
-  - Computer Science
-  - Electrical Engineering
-  - Mechanical Engineering
-  - And more!
