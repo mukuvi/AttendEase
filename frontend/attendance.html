@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attendance - AttendEase</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">AttendEase</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="attendance.html" class="active">Attendance</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="attendance-container">
+      <h2>Class Attendance</h2>
+      <div class="filters">
+        <div class="filter-group">
+          <label for="course">Course Code:</label>
+          <select id="course">
+            <option value="computer-science">COMP 311</option>
+            <option value="engineering">COMP 312</option>
+            <option value="education">COMP 313</option>
+            <option value="economics">MATH 313</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="year">Year:</label>
+          <select id="year">
+            <option value="1">1st Year</option>
+            <option value="2">2nd Year</option>
+            <option value="3">3rd Year</option>
+            <option value="4">4th Year</option>
+            <option value="5">5th Year</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="date">Date:</label>
+          <input type="date" id="date" />
+        </div>
+      </div>
+
+      <table class="attendance-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Attendance Status</th>
+            <th>Semester Attendance</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>David Polycarp</td>
+            <td><span class="present">Present</span></td>
+            <td>95%</td>
+          </tr>
+          <tr>
+            <td>James Ngandu</td>
+            <td><span class="absent">Absent</span></td>
+            <td>80%</td>
+          </tr>
+          <tr>
+            <td>Jacinta Atieno</td>
+            <td><span class="present">Present</span></td>
+            <td>92%</td>
+          </tr>
+          <tr>
+            <td>Henry Ouma</td>
+            <td><span class="absent">Absent</span></td>
+            <td>85%</td>
+          </tr>
+          <!-- Add more students as needed -->
+        </tbody>
+      </table>
+    </section>
+
+    <footer>
+      <p>© 2024 AttendEase</p>
+    </footer>
+  </body>
+</html>

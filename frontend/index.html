@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AttendEase</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">AttendEase</div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="attendance.html">Attendance</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="registration">
+      <div class="camera-container">
+        <h2>Registered</h2>
+        <video id="video" width="100%" height="auto" autoplay></video>
+        <button id="startCamera">Start Camera</button>
+        <button id="takePhoto" style="display: none">Take Photo</button>
+      </div>
+
+      <div class="form-container">
+        <h2>Student Registration</h2>
+        <form id="registerForm">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input
+            type="text"
+            id="admission"
+            placeholder="Admission Number"
+            required
+          />
+          <input type="email" id="email" placeholder="Email Address" required />
+          <select id="department" required>
+            <option value="" disabled selected>Select Course</option>
+            <option value="CSE">COMP 311</option>
+            <option value="ECE">COMP 311</option>
+            <option value="EDU">COMP 311</option>
+            <option value="ECO">MATH 313</option>
+          </select>
+          <button type="submit" id="submit" style="display: none">
+            Submit
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2024 AttendEase</p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
